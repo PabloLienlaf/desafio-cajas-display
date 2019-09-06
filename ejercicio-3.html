@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 3</title>
+    <style media="screen" type="text/css">
+      * {
+  			box-sizing: border-box;
+  		}
+  		.container{
+  		width: 100%;
+  		max-width: 60%;
+  		height: auto;
+  		overflow: hidden;
+  		margin: 0 auto;
+  		padding: 0;
+  		}
+  		.col-50{
+  		width: 50%;
+  		height: auto;
+  		overflow: hidden;
+  		padding: 5px 15px;
+  		float: left;
+  		}
+  		.base_amarilla{
+  			background:#ffff00;
+  		}
+  		.base_roja{
+  			background:#ff0000;
+  		}
+  		.base_blanca{
+  			background:#ffffff;
+  		}
+  		.espana, .dinamarca, .earabes, .japon{
+  			width: 100%;
+  			height: 236px;
+  			border: 2px solid gray;
+  			position: relative;
+  		}
+  		.espana .franja_arriba{
+  			width: 100%;
+  			height: 70px;
+  			position: absolute;
+  			background: #ff0000;
+  		}
+  		.espana .franja_abajo{
+  			width: 100%;
+  			height: 70px;
+  			position: absolute;
+  			bottom: 0;
+  			background: #ff0000;
+  		}
+  		.dinamarca .franja_izq{
+  			width: 30px;
+  			height:100%;
+  			position: absolute;
+  			left:100px;
+  			background: #ffffff;
+  		}
+  		.dinamarca .franja_arriba{
+  			width:100%;
+  			height:30px;
+  			position: absolute;
+  			top:100px;
+  			background: #ffffff;
+  		}
+  		.earabes .franja_arriba{
+  			width:100%;
+  			height:80px;
+  			position: absolute;
+  			background: #008000;
+  		}
+  		.earabes .franja_abajo{
+  			width:100%;
+  			height:80px;
+  			position: absolute;
+  			bottom:0;
+  			background: #000000;
+  		}
+  		.earabes .franja_izq{
+  			width:100px;
+  			height:100%;
+  			position:absolute;
+  			background:#ff0000;
+  			z-index: 2;
+  		}
+  		.japon .circulo{
+  			width: 120px;
+  			height: 120px;
+  			border-radius: 100%;
+  			background:#ff0000;
+  			margin: auto;
+  			position: absolute;
+  			top: 0; left: 0; bottom: 0; right: 0;
+  		}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="col-50">
+          <article class="espana base_amarilla">
+            <div class="franja_arriba"></div>
+            <div class="franja_abajo"></div>
+          </article>
+          <h2>España</h2>
+        </div>
+        <div class="col-50">
+          <article class="dinamarca base_roja">
+            <div class="franja_arriba"></div>
+            <div class="franja_izq"></div>
+          </article>
+          <h2>Dinamarca</h2>
+        </div>
+        <div class="col-50">
+          <div class="earabes base_blanca">
+            <div class="franja_arriba"></div>
+            <div class="franja_abajo"></div>
+            <div class="franja_izq"></div>
+          </div>
+          <h2>Emiratos Árabes</h2>
+        </div>
+        <div class="col-50">
+          <div class="japon base_blanca">
+            <div class="circulo"></div>
+          </div>
+          <h2>Japón</h2>
+        </div>
+    </div>
+  </body>
+</html>
